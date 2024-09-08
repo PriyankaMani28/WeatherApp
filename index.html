@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./dist/css/style.css" />
+  <title>Weather Application</title>
+</head>
+
+<body>
+  <div class="opacity"></div>
+  <div class="mainBorder">
+    <header>
+      <div class="logo">
+        <p><a href="#">Weather App</a></p>
+      </div>
+
+      <div class="input">
+        <input type="text" placeholder="Enter city name" id="inputCity" />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <!-- Main Content -->
+      <div id="mainContent">
+        <div id="cityDeets">
+          <div>
+            <h1 id="cityName" class="textShadow">N/A</h1>
+          </div>
+
+          <div class="dayTime textShadow">
+            <p><span class="day">Monday</span>,</p>
+            <p class="time">11:42 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather Condition -->
+      <div class="weatherCondition">
+        <p id="weather" class="textShadow">N/A</p>
+      </div>
+
+      <!-- Other Details -->
+      <div id="otherContent">
+        <div class="border2"></div>
+
+        <div id="otherDetails">
+          <div class="feelsLikeContainer container">
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+            <p class="para1">Feels like</p>
+            <p class="para2"><span id="tempFeel">N/A</span> °</p>
+          </div>
+          <div class="humidityContainer container">
+            <i class="fa-solid fa-droplet"></i>
+            <p class="para1">Humidity</p>
+            <p class="para2">
+              <span id="humdity">N/A</span> <span class="para3">%</span>
+            </p>
+          </div>
+          <div class="windContainer container">
+            <i class="fa-solid fa-wind"></i>
+            <p class="para1">Wind</p>
+            <p class="para2">
+              <span id="wind">N/A</span> <span class="para3">km/h</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temperature Details -->
+      <div id="TemperatureContent">
+        <div class="tempContainer">
+          <p class="tempHeading textShadow"><span id="temp">N/A</span> °C</p>
+        </div>
+        <div class="tempBox">
+          <div class="tempMaxContainer container">
+            <i class="fa-solid fa-temperature-arrow-up"></i>
+            <p class="">Temperature (Max.)</p>
+            <p class=""><span id="tempMax">N/A</span> °</p>
+          </div>
+          <div class="tempMinContainer container">
+            <i class="fa-solid fa-temperature-arrow-down"></i>
+            <p class="">Temperature (Min.)</p>
+            <p class=""><span id="tempMin">N/A</span> °</p>
+          </div>
+          <div class="sunriseContainer container">
+            <div class="icon">
+              <i class="fa-solid fa-arrow-up"></i>
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <p class="">Sunrise</p>
+            <p class="" id="sunrise">N/A</p>
+          </div>
+          <div class="sunsetContainer container">
+            <div class="icon">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <p class="">Sunset</p>
+            <p class="" id="sunset">N/A</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./dist/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/9ba24a9f81.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
